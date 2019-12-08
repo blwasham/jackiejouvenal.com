@@ -17,3 +17,22 @@
   font-family: 'Quicksand', sans-serif;
   font-color: #666666 !important;
 }
+
+.grid-sizer {
+  width: 33.333%;
+}
+
+.grid-item {
+  margin-bottom: 10px;
+}
+
+.grid-img {
+  width: 100%;
+  border-left: 10px solid white;
+}
+@media screen and (max-width: 768px) {
+  /* 5 columns for larger screens */
+  .grid-sizer {
+    width: 100%;
+  }
+}
