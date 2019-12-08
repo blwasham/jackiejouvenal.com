@@ -1,3 +1,19 @@
+.navbar-toggler:active,
+.navbar-toggler:focus {
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focusring-color;
+}
+
 .title {
   font-family: 'Marck Script', cursive;
+}
+
+.jb-bg {
+  background-color: #007c85;
+  background-image: url("images/45-degree-fabric-light.png");
+}
+
+.jb-text {
+  font-family: 'Quicksand', sans-serif;
+  font-color: #666666 !important;
 }

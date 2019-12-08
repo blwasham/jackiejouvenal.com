@@ -6,14 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="">
   <meta name="author" content="">
-  <link rel="icon" href="/docs/4.0/assets/img/favicons/favicon.ico">
 
   <title>Artworks by Jacquelyn Jouvenal</title>
 
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
   <!-- title font from google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Marck+Script&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Marck|Quicksand+Script&display=swap" rel="stylesheet">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
@@ -25,21 +24,33 @@
   <script src="https://kit.fontawesome.com/25545f66c9.js" crossorigin="anonymous"></script>
 
   <!-- Favicon links -->
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
-  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicons/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicons/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicons/favicon-16x16.png">
+  <link rel="icon" href="favicons/favicon.ico">
+  <link rel="manifest" href="favicons/site.webmanifest">
 </head>
 
 <body>
 
   <header>
+    <div class="navbar navbar-dark bg-dark box-shadow">
+      <div class="container d-flex justify-content-between">
+        <a href="#" class="navbar-brand d-flex align-items-center title">
+          <strong>Jacquelyn Jouvenal</strong>
+        </a>
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </div>
+    </div>
     <div class="collapse bg-dark" id="navbarHeader">
       <div class="container">
         <div class="row">
           <div class="col-sm-8 col-md-7 py-4">
             <h4 class="text-white">About</h4>
             <p class="text-muted">
+              <!-- <img src="https://res.cloudinary.com/bwasham/image/asset/v1449713940/jackie_frederick_easels-7b75dcb3d49d2459e9fa7c2c15a8f88a.jpg" /> -->
               Growing up a stone’s throw from the Potomac River, Jacquelyn spent many of her days enjoying the river’s beauty.
               Stemming from those childhood impressions, she uses water and nature as constant subjects in her artwork.
               Many of her works are completed on site in the Washington area, the Eastern Shore, Southern Maryland, and many North Carolina Beaches.
@@ -48,37 +59,40 @@
           <div class="col-sm-4 offset-md-1 py-4">
             <h4 class="text-white">Contact</h4>
             <ul class="list-unstyled">
-              <li><a href="#" class="text-white">Like on Facebook</a></li>
-              <li><a href="#" class="text-white">Email me</a></li>
+              <li>
+                <a href="https://www.facebook.com/public/Jackie-Jouvenal-Washam" target="_blank" class="text-white">
+                  <i class="fab fa-facebook"></i>&nbsp;
+                  Like on Facebook
+                </a>
+              </li>
+              <li>
+                <a href="https://www.pinterest.com/jjwasham/" target="_blank" class="text-white">
+                  <i class="fab fa-pinterest"></i>&nbsp;
+                  Follow on Pinterest
+                </a>
+              <li>
+                <a href="mailto: jackiejouvenal@hotmail.com" class="text-white">
+                  <i class="fas fa-at"></i>&nbsp;
+                  jackiejouvenal@hotmail.com
+                </a>
+              </li>
             </ul>
           </div>
         </div>
-      </div>
-    </div>
-    <div class="navbar navbar-dark bg-dark box-shadow">
-      <div class="container d-flex justify-content-between">
-        <a href="#" class="navbar-brand d-flex align-items-center title">
-          <strong>Jacquelyn Jouvenal</strong>
-        </a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarHeader" aria-controls="navbarHeader" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
       </div>
     </div>
   </header>
 
   <main role="main">
 
-    <section class="jumbotron text-center">
+    <div class="jumbotron jumbotron-fluid jb-bg">
       <div class="container">
-        <h1 class="jumbotron-heading">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don't simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
+        <h1 class="display-4">Recent Works</h1>
+        <p class="lead">
+          Below is a collection of my recent oil and pastel works.
         </p>
       </div>
-    </section>
+    </div>
 
     <div class="album py-5 bg-light">
       <div class="container">
