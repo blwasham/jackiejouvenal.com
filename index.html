@@ -51,6 +51,7 @@
             <h4 class="text-white">About</h4>
             <p class="text-muted">
               <!-- <img src="https://res.cloudinary.com/bwasham/image/asset/v1449713940/jackie_frederick_easels-7b75dcb3d49d2459e9fa7c2c15a8f88a.jpg" /> -->
+              <img data-src="https://res.cloudinary.com/bwasham/image/asset/v1449713940/jackie_frederick_easels-7b75dcb3d49d2459e9fa7c2c15a8f88a.jpg" class="cld-responsive">
               Growing up a stone’s throw from the Potomac River, Jacquelyn spent many of her days enjoying the river’s beauty.
               Stemming from those childhood impressions, she uses water and nature as constant subjects in her artwork.
               Many of her works are completed on site in the Washington area, the Eastern Shore, Southern Maryland, and many North Carolina Beaches.
@@ -256,6 +257,20 @@
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script>
+    var cloudinary = require("cloudinary-core"); // If your code is for ES5
+    var cl = new cloudinary.Cloudinary({
+      cloud_name: "bwasham",
+      secure: true
+    });
+
+    var cl = cloudinary.Cloudinary.new({
+      cloud_name: "bwasham"
+    });
+    // replace 'demo' with your cloud name in the line above
+    cl.responsive();
+  </script>
 </body>
 
 </html>
