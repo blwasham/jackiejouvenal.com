@@ -12,10 +12,13 @@
   <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
   <!-- title font from google fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Marck|Quicksand+Script&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Marck|Quicksand+Script&display=swap">
 
   <!-- Bootstrap core CSS -->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <!-- LightBox for enlarging thumbnails -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css">
 
   <!-- local stylesheet -->
   <link rel="stylesheet" href="styles.css" />
@@ -49,7 +52,7 @@
             Stemming from those childhood impressions, she uses water and nature as constant subjects in her artwork.
             Many of her works are completed on site in the Washington area, the Eastern Shore, Southern Maryland, and many North Carolina Beaches.
           </div>
-          <div class="col-sm-4 py-4">
+          <div class="col-sm-6 col-md-4 py-4">
             <ul class="list-unstyled">
               <li>
                 <i class="fab fa-facebook"></i>&nbsp;
@@ -84,124 +87,245 @@
       <div class="container">
         <div class="row">
           <div class="col">
+            <h3>Recent Works</h3>
             <div class="grid no-gutters">
               <!-- width of .grid-sizer used for columnWidth -->
-              <div class="grid-sizer"></div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Autumn_Light_xihuuh.jpg" alt="Autum Light">
+              <div class="grid-sizer col-sm-6 col-md-4"></div>
+
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807434/paintings/Rolling_Hills_kgiqul.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Rolling Hills">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807434/paintings/Rolling_Hills_kgiqul.jpg" alt="Rolling Hills">
+                  <div class="text-muted small float-left">Rolling Hills</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Calabash_c3mizm.jpg" alt="Calabash">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Autumn_Light_xihuuh.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Autumn Light">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Autumn_Light_xihuuh.jpg" alt="Autumn Light">
+                  <div class="text-muted small float-left">Autumn Lights</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Assateague_creek_hvcmya.jpg" alt="Assateague Creek">
+              <div class="grid-item col-12 col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Calabash_c3mizm.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Calabash">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Calabash_c3mizm.jpg" alt="Calabash">
+                  <div class="text-muted small float-left">Calabash</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Bay_Brake_w5xvbl.jpg" alt="Bay Brake">
+              <div class="grid-item col-12 col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Assateague_creek_hvcmya.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Assateague Creek">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Assateague_creek_hvcmya.jpg" alt="Assateague Creek">
+                  <div class="text-muted small float-left">Assateague Creek</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Brookeside_Gardens_z5ohsr.jpg" alt="Brookeside Gardens">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Bay_Brake_w5xvbl.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Bay Brake">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Bay_Brake_w5xvbl.jpg" alt="Bay Brake">
+                  <div class="text-muted small float-left">Bay Brake</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Waiting_For_the_Plunge_vmbrz0.jpg" alt="Waiting for the Plunge">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Brookeside_Gardens_z5ohsr.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Brookeside Gardens">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Brookeside_Gardens_z5ohsr.jpg" alt="Brookeside Gardens">
+                  <div class="text-muted small float-left">Brookeside Gardens</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Serene_Trail_jh5sgn.jpg" alt="Serene Trimg-thumbnail">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807440/paintings/Waiting_For_the_Plunge_vmbrz0.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Waiting for the Plunge">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807440/paintings/Waiting_For_the_Plunge_vmbrz0.jpg" alt="Waiting for the Plunge">
+                  <div class="text-muted small float-left">Waiting for the Plunge</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Murrells_Inlet_q9p50u.jpg" alt="Murrells Inlet">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807439/paintings/Serene_Trail_jh5sgn.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Serene Trail">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Serene_Trail_jh5sgn.jpg" alt="Serene Trail">
+                  <div class="text-muted small float-left">Serene Trail</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Frederick_Study_y0dteb.jpg" alt="Frederick Study">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807439/paintings/Murrells_Inlet_q9p50u.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Murrells Inlet">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Murrells_Inlet_q9p50u.jpg" alt="Murrells Inlet">
+                  <div class="text-muted small float-left">Murrells Inlet</div>
+                </a>
               </div>
 
 
 
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Ocean_Isle_at_Dawn_mndw3b.jpg" alt="Ocean Isle at Dawn">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807439/paintings/Ocean_Isle_at_Dawn_mndw3b.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Ocean Isle at Dawn">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Ocean_Isle_at_Dawn_mndw3b.jpg" alt="Ocean Isle at Dawn">
+                  <div class="text-muted small float-left">Ocean Isle at Dawn</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Beach_Study_szqmfd.jpg" alt="Beach Study">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807439/paintings/Beach_Study_szqmfd.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Beach Study">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Beach_Study_szqmfd.jpg" alt="Beach Study">
+                  <div class="text-muted small float-left">Beach Study</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Fields_in_Frederick_ux82ih.jpg" alt="Fields in Frederick">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807439/paintings/Fields_in_Frederick_ux82ih.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Fields in Frederick">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807439/paintings/Fields_in_Frederick_ux82ih.jpg" alt="Fields in Frederick">
+                  <div class="text-muted small float-left">Fields in Frederick</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Wispering_Waterway_xo19d4.jpg" alt="Wispering Waterway">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Wispering_Waterway_xo19d4.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Whispering Waterway">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Wispering_Waterway_xo19d4.jpg" alt="Whispering Waterway">
+                  <div class="text-muted small float-left">Whispering Waterway</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Before_it_Breaks_csfugq.jpg" alt="Before it Breaks">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Before_it_Breaks_csfugq.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Before it Breaks">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Before_it_Breaks_csfugq.jpg" alt="Before it Breaks">
+                  <div class="text-muted small float-left">Before it Breaks</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Untamed_Fields_tlagpv.jpg" alt="Untamed Fields">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Untamed_Fields_tlagpv.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Untamed Fields">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Untamed_Fields_tlagpv.jpg" alt="Untamed Fields">
+                  <div class="text-muted small float-left">Untamed Fields</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Trees_of_Gold_bazktr.jpg" alt="Trees of Gold">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Trees_of_Gold_bazktr.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Trees of Gold">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Trees_of_Gold_bazktr.jpg" alt="Trees of Gold">
+                  <div class="text-muted small float-left">Trees of Gold</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Poolesville_Sycamores_kxxnrl.jpg" alt="Poolesville Sycamores">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Poolesville_Sycamores_kxxnrl.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Poolesville Sycamores">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Poolesville_Sycamores_kxxnrl.jpg" alt="Poolesville Sycamores">
+                  <div class="text-muted small float-left">Poolesville Sycamores</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Valley_Views_celuap.jpg" alt="Valley Views">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Valley_Views_celuap.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Valley Views">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Valley_Views_celuap.jpg" alt="Valley Views">
+                  <div class="text-muted small float-left">Valley Views</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
 
 
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Summer_Walk_fdsuxm.jpg" alt="Summer Walk">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807438/paintings/Summer_Walk_fdsuxm.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Summer Walk">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807438/paintings/Summer_Walk_fdsuxm.jpg" alt="Summer Walk">
+                  <div class="text-muted small float-left">Summer Walk</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Honeyed_Grass_ik3s9z.jpg" alt="Honeyed Grass">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/Honeyed_Grass_ik3s9z.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Honeyed Grass">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Honeyed_Grass_ik3s9z.jpg" alt="Honeyed Grass">
+                  <div class="text-muted small float-left">Honeyed Grass</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Boardwalk_Trail_p65fpp.jpg" alt="Boardwalk Trail">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/Boardwalk_Trail_p65fpp.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Boardwalk Trail">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Boardwalk_Trail_p65fpp.jpg" alt="Boardwalk Trail">
+                  <div class="text-muted small float-left">Boardwalk Trail</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/potomac_rowers_l4yqou.jpg" alt="Potomac Rowers">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/potomac_rowers_l4yqou.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Potomac Rowers (sold)">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/potomac_rowers_l4yqou.jpg" alt="Potomac Rowers">
+                  <div class="text-muted small float-left">Potomac Rowers (sold)</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/red_hot_cy40iw.jpg" alt="Red Hot">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/red_hot_cy40iw.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Red Hot">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/red_hot_cy40iw.jpg" alt="Red Hot">
+                  <div class="text-muted small float-left">Red Hot</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Cumulus_b3tyay.jpg" alt="Cumulus">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/Cumulus_b3tyay.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Cumulus">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Cumulus_b3tyay.jpg" alt="Cumulus">
+                  <div class="text-muted small float-left">Cumulus</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Taylor_s_Island_House_gcfnhy.jpg" alt="Taylor's Island House">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807437/paintings/Taylor_s_Island_House_gcfnhy.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Taylor's Island House">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807437/paintings/Taylor_s_Island_House_gcfnhy.jpg" alt="Taylor's Island House">
+                  <div class="text-muted small float-left">Taylor's Island House</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Middletown_Ladies_qteg36.jpg" alt="Middletown Ladies">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Middletown_Ladies_qteg36.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Middletown Ladies">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Middletown_Ladies_qteg36.jpg" alt="Middletown Ladies">
+                  <div class="text-muted small float-left">Middletown Ladies</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Fall_Storm_r6higy.jpg" alt="Fall Storm">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Fall_Storm_r6higy.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Fall Storm">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Fall_Storm_r6higy.jpg" alt="Fall Storm">
+                  <div class="text-muted small float-left">Fall Storm</div>
+                </a>
               </div>
 
 
 
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Boat_Glow_yuvkrz.jpg" alt="Boat Glow">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Boat_Glow_yuvkrz.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Boat Glow">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Boat_Glow_yuvkrz.jpg" alt="Boat Glow">
+                  <div class="text-muted small float-left">Boat Glow</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Bennies_Hill_uauzxx.jpg" alt="Bennies Hill">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Bennies_Hill_uauzxx.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Bennies Hill">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Bennies_Hill_uauzxx.jpg" alt="Bennies Hill">
+                  <div class="text-muted small float-left">Bennies Hill</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Shifting_Clouds_huheol.jpg" alt="Shifting Clouds">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Shifting_Clouds_huheol.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Shifting Clouds">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Shifting_Clouds_huheol.jpg" alt="Shifting Clouds">
+                  <div class="text-muted small float-left">Shifting Clouds</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Golden_Hour_ipypwi.jpg" alt="Gold Hour">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Golden_Hour_ipypwi.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Gold Hour">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Golden_Hour_ipypwi.jpg" alt="Gold Hour">
+                  <div class="text-muted small float-left">Gold Hour</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Rise_Again_a5gmhh.jpg" alt="Rise Again">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Rise_Again_a5gmhh.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Rise Again">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Rise_Again_a5gmhh.jpg" alt="Rise Again">
+                  <div class="text-muted small float-left">Rise Again</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Blackwater_Trees_u3qyri.jpg" alt="Blackwater Trees">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Blackwater_Trees_u3qyri.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Blackwater Trees">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Blackwater_Trees_u3qyri.jpg" alt="Blackwater Trees">
+                  <div class="text-muted small float-left">Blackwater Trees</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/IMG_7473_wyazox.jpg" alt="Ocean Creek">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/IMG_7473_wyazox.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Ocean Creek">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/IMG_7473_wyazox.jpg" alt="Ocean Creek">
+                  <div class="text-muted small float-left">Ocean Creek</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Days_End_bkxhzp.jpg" alt="Days End">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807436/paintings/Days_End_bkxhzp.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Days End">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807436/paintings/Days_End_bkxhzp.jpg" alt="Days End">
+                  <div class="text-muted small float-left">Days End</div>
+                  <div class="text-danger small float-right">SOLD</div>
+                </a>
               </div>
-              <div class="grid-item col-sm-4">
-                <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807435/paintings/Windswept_y8fobp.jpg" alt="Windswept">
+              <div class="grid-item col-sm-6 col-md-4">
+                <a href="https://res.cloudinary.com/bwasham/image/upload/v1575807435/paintings/Windswept_y8fobp.jpg" data-toggle="lightbox" data-gallery="paintings" data-title="Windswept">
+                  <img class="grid-img" src="https://res.cloudinary.com/bwasham/image/upload/c_thumb,w_200,g_face/v1575807435/paintings/Windswept_y8fobp.jpg" alt="Windswept">
+                  <div class="text-muted small float-left">Windswept</div>
+                </a>
               </div>
             </div>
           </div>
@@ -223,9 +347,10 @@
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 
-
   <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
   <script src="https://unpkg.com/imagesloaded@4/imagesloaded.pkgd.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"></script>
 
   <script>
     // init Masonry
@@ -247,6 +372,14 @@
         // set to an element
         columnWidth: $grid.find('.grid-sizer')[0]
       })
+    });
+
+    // lightbox setup
+    $(document).on('click', '[data-toggle="lightbox"]', function(event) {
+      event.preventDefault();
+      $(this).ekkoLightbox({
+        alwaysShowClose: true,
+      });
     });
   </script>
 
